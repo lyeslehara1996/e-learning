@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Hôte : 127.0.0.1
+- Généré le :  mar. 02 juil. 2019 à 13:12
+- Version du serveur :  10.1.37-MariaDB
+- Version de PHP :  7.2.13
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="elearning" collation="utf8_bin" charset="utf8">
+            <pma:table name="messagerie">
+                CREATE TABLE `messagerie` (
+                  `chat_message_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `to_user_id` int(11) NOT NULL,
+                  `from_user_id` int(11) NOT NULL,
+                  `chat_message` text CHARACTER SET latin1 NOT NULL,
+                  `date` date NOT NULL,
+                  PRIMARY KEY (`chat_message_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données :  'elearning'
+    -->
+    <database name="elearning">
+        <!-- Table messagerie -->
+        <table name="messagerie">
+            <column name="chat_message_id">3</column>
+            <column name="to_user_id">1</column>
+            <column name="from_user_id">65</column>
+            <column name="chat_message">sfff</column>
+            <column name="date">2019-06-29</column>
+        </table>
+        <table name="messagerie">
+            <column name="chat_message_id">39</column>
+            <column name="to_user_id">1</column>
+            <column name="from_user_id">65</column>
+            <column name="chat_message">je suis l'etudiant</column>
+            <column name="date">2019-07-01</column>
+        </table>
+        <table name="messagerie">
+            <column name="chat_message_id">40</column>
+            <column name="to_user_id">1</column>
+            <column name="from_user_id">65</column>
+            <column name="chat_message">ttt</column>
+            <column name="date">2019-07-01</column>
+        </table>
+        <table name="messagerie">
+            <column name="chat_message_id">41</column>
+            <column name="to_user_id">65</column>
+            <column name="from_user_id">1</column>
+            <column name="chat_message">dddd</column>
+            <column name="date">2019-07-01</column>
+        </table>
+        <table name="messagerie">
+            <column name="chat_message_id">42</column>
+            <column name="to_user_id">65</column>
+            <column name="from_user_id">1</column>
+            <column name="chat_message"></column>
+            <column name="date">2019-07-01</column>
+        </table>
+        <table name="messagerie">
+            <column name="chat_message_id">45</column>
+            <column name="to_user_id">1</column>
+            <column name="from_user_id">65</column>
+            <column name="chat_message"></column>
+            <column name="date">2019-07-01</column>
+        </table>
+    </database>
+</pma_xml_export>
