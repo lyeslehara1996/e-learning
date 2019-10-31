@@ -1,0 +1,9 @@
+.navbar-inverse .navbar-nav>li>a.active {
+    color: #791d1d;
+}
+.tab-content{
+    display: none
+}
+.tab-content.active{
+    display: block0
+}
